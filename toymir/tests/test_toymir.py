@@ -21,6 +21,7 @@ def test_hz_to_midi_float():
     expected = 69
     assert toymir.hz_to_midi(440.0) == expected
 
+
 def test_hz_to_midi_array():
     expected = [57, 69, 81]
     assert np.allclose(toymir.hz_to_midi([220.0, 440.0, 880.0]), expected)
